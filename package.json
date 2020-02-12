@@ -4,17 +4,31 @@
   "description": "Simple http-server with a user API",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/*.js",
+    "test": "mocha test/*.js",
     "start": "node src/index.js"
   },
   "author": "Sergei Kudinov <sergei@adaltas.com>",
   "license": "ISC",
   "dependencies": {
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
-    "mixme": "^0.3.5"
+    "fs": "0.0.1-security",
+    "mixme": "^0.3.5",
+    "os": "^0.1.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergkudinov/ece-userapi-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergkudinov/ece-userapi-2/issues"
+  },
+  "homepage": "https://github.com/sergkudinov/ece-userapi-2#readme"
 }
